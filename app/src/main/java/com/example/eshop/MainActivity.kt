@@ -45,7 +45,8 @@ class MainActivity : AppCompatActivity() {
            val product_gst=tv_product_gst_amount.text.toString()
            val product_discount=tv_product_discount.text.toString()
            val product_delivery_charge=tv_Product_delivery_charge.text.toString()
-           val product = Product(product_category,product_name,product_price,product_gst,product_discount,product_delivery_charge)
+           val product_image=currFile.toString()
+           val product = Product(product_category,product_name,product_price,product_gst,product_discount,product_delivery_charge,product_image)
            saveProduct(product)
         }
     }
